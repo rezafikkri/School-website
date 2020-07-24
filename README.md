@@ -1,10 +1,5 @@
 # Website Sekolah
 
-### Apakah ini gratis?
-Program ini gratis, gratis digunakan untuk belajar kamu juga bebas mengembangkannya, tetapi jangan lupa meletakkan sumber.
-### Apakah saya dapat menjualnya?
-Tidak, saya tidak mengizinkan kamu menjualnya. Tetapi jika kamu benar-benar telah mengembangkannya dan sangat berbeda dengan yang sekarang, saya izinkan untuk menjualnya dan jangan lupa meletakkan sumber.
-
 ### Teknologi apa saja yang digunakan?
 1. codeigniter 3.1.10
 2. bootstrap
