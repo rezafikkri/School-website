@@ -34,6 +34,9 @@
 	- Management Opening Word
 11. Management User
 
+### Memerlukan
+1. PHP7.3.20 atau 7.4
+
 ### Info login
 Untuk hak akses Super Admin
 
