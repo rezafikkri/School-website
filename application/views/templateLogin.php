@@ -7,9 +7,9 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="Web Sekolah">
     <meta name="author" content="Reza Sariful Fikkri">
-    <link rel="icon" href="<?= base_url(); ?>/assets/img/favicon.ico">
+    <link rel="icon" href="<?= getLogo(); ?>">
 
-    <title>SISBW</title>
+    <title>School Website</title>
 
     <!-- Bootstrap core CSS -->
     <link href="<?= base_url(); ?>/assets/css/bootstrap.min.css" rel="stylesheet">

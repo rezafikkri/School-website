@@ -1,16 +1,15 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.5
+-- version 5.0.2
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: May 21, 2019 at 05:08 PM
--- Server version: 10.1.38-MariaDB
--- PHP Version: 7.3.3
+-- Host: localhost
+-- Generation Time: Jul 24, 2020 at 01:49 PM
+-- Server version: 10.5.4-MariaDB-1:10.5.4+maria~xenial
+-- PHP Version: 7.4.8
 
--- SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
--- SET AUTOCOMMIT = 0;
--- START TRANSACTION;
--- SET time_zone = "+00:00";
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
 
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -19,10 +18,10 @@
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `sisbw`
+-- Database: `school_website`
 --
-CREATE DATABASE `sisbw`;
-USE `sisbw`;
+CREATE DATABASE `school_website`;
+use `school_website`;
 -- --------------------------------------------------------
 
 --
@@ -44,7 +43,7 @@ CREATE TABLE `berita` (
 
 INSERT INTO `berita` (`berita_id`, `judulBesar`, `judulKecil`, `urlImgUtama`, `isi`, `post`) VALUES
 ('12f71ba3-b1d8-4735-be9c-82ec7ab67fb3', 'Ujikom kelas 12 berjalan dengan lancar', '', '', '<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit essecillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>\r\n', '1558409788'),
-('32447057-7967-4d61-a709-e400af41b9f1', 'Ujian Kelas 12 tahun 2018-2019', 'berjalan dengan tertib', 'http://localhost/sisbw/assets/img/berita/1.jpg', '<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>\r\n\r\n<p>&nbsp;</p>\r\n', '1558409772'),
+('32447057-7967-4d61-a709-e400af41b9f1', 'Ujian Kelas 12 tahun 2018-2019', 'berjalan dengan tertib', 'http://localhost/School-website/assets/img/berita/1.jpg', '<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>\r\n\r\n<p>&nbsp;</p>\r\n', '1595565305'),
 ('54333c64-191a-482a-a73a-3245d80cb802', 'Kedatangan Bapak Gubernur Bengkulu', '- Rohidin Mersyah', '', '<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,&nbsp;&nbsp;&nbsp; quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, <span style=\"color:#c0392b\"><strong>sunt in culpa qui officia deserunt mollit anim id est laborum.</strong></span></p>\r\n', '1556843847'),
 ('cd132d87-d308-451f-a0cb-fa86cc94c0a3', 'Kedatangan Kepala Dinas Pendidikan dan Kebudayaan', 'Budiman', '', '<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmo tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>\r\n', '1558409648');
 
@@ -65,10 +64,10 @@ CREATE TABLE `fasilitas` (
 --
 
 INSERT INTO `fasilitas` (`fasilitas_id`, `url_img`, `keterangan`) VALUES
-('42c2becf-28cf-446d-a948-42fb2878c7c8', 'http://localhost/sisbw/assets/img/fasilitas/musolla.jpg', 'Musollahh'),
-('74a89d87-6abf-4acd-9b01-69e8942ada6b', 'http://localhost/sisbw/assets/img/fasilitas/lapangan.jpg', 'Lapangan olahraga'),
-('d65f58b5-fa5a-4472-88eb-c806707c2a2e', 'http://localhost/sisbw/assets/img/fasilitas/lab komputer.jpg', 'Lab komputer'),
-('df948be2-84b9-4d7b-a841-f9cd67e163c2', 'http://localhost/sisbw/assets/img/fasilitas/perpustakaan.jpg', 'Perpustakaan');
+('42c2becf-28cf-446d-a948-42fb2878c7c8', 'http://localhost/School-website/assets/img/fasilitas/musolla.JPG', 'Musollah'),
+('74a89d87-6abf-4acd-9b01-69e8942ada6b', 'http://localhost/School-website/assets/img/fasilitas/lapangan.jpg', 'Lapangan olahraga'),
+('d65f58b5-fa5a-4472-88eb-c806707c2a2e', 'http://localhost/School-website/assets/img/fasilitas/lab komputer.jpg', 'Lab komputer'),
+('df948be2-84b9-4d7b-a841-f9cd67e163c2', 'http://localhost/School-website/assets/img/fasilitas/perpustakaan.JPG', 'Perpustakaan');
 
 -- --------------------------------------------------------
 
@@ -109,9 +108,9 @@ CREATE TABLE `foto` (
 --
 
 INSERT INTO `foto` (`foto_id`, `url_foto`, `keterangan`, `post`) VALUES
-('631bd4eb-b896-49e4-9eab-692491c07dcc', 'http://localhost/sisbw/assets/img/galeri/2.png', 'Belajar komputer', '1558420900'),
-('a3f713d4-91f3-4c6a-a1a3-0a0844400575', 'http://localhost/sisbw/assets/img/galeri/4.jpg', 'Basket', '1558420954'),
-('b468d1c6-1428-4452-b35d-5d618f326fd3', 'http://localhost/sisbw/assets/img/galeri/7.jpg', 'Anak teladan', '1558421015');
+('631bd4eb-b896-49e4-9eab-692491c07dcc', 'http://localhost/School-website/assets/img/galeri/2.png', 'Belajar komputer', '1595564787'),
+('a3f713d4-91f3-4c6a-a1a3-0a0844400575', 'http://localhost/School-website/assets/img/galeri/4.jpg', 'Basket', '1595564721'),
+('b468d1c6-1428-4452-b35d-5d618f326fd3', 'http://localhost/School-website/assets/img/galeri/7.jpg', 'Anak teladan', '1595564706');
 
 -- --------------------------------------------------------
 
@@ -124,7 +123,7 @@ CREATE TABLE `guru_staf` (
   `nama` varchar(50) NOT NULL,
   `jabatan` varchar(32) NOT NULL,
   `kategori` enum('guru','staf','kepala_sekolah') NOT NULL,
-  `keterangan` text,
+  `keterangan` text DEFAULT NULL,
   `url_fotoProfile` varchar(100) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -133,10 +132,11 @@ CREATE TABLE `guru_staf` (
 --
 
 INSERT INTO `guru_staf` (`guru_staf_id`, `nama`, `jabatan`, `kategori`, `keterangan`, `url_fotoProfile`) VALUES
-('bc3f9300-6432-46ce-b04b-3374c97bf0fa', 'Dian', 'Bendahara', 'staf', NULL, NULL),
-('d1b74016-534f-4e35-a72a-2803881b8f6d', 'Reza Sariful Fikkri', 'Kepala Sekolah', 'kepala_sekolah', '<h4>IDENTITAS DIRI</h4>\r\n\r\n<table class=\"\\\">\r\n	<tbody>\r\n		<tr>\r\n			<td>NIP</td>\r\n			<td>:</td>\r\n			<td>19670707 199412 1 002</td>\r\n		</tr>\r\n		<tr>\r\n			<td>PANGKAT/GOLONGAN</td>\r\n			<td>:</td>\r\n			<td>PEMBINA Tk.I/IV b</td>\r\n		</tr>\r\n		<tr>\r\n			<td>TEMPAT TANGGAL LAHIR</td>\r\n			<td>:</td>\r\n			<td>BUKIT KEMUNING, 07 JULI 1967</td>\r\n		</tr>\r\n		<tr>\r\n			<td>JENIS KELAMIN</td>\r\n			<td>:</td>\r\n			<td>LAKI-LAKI</td>\r\n		</tr>\r\n		<tr>\r\n			<td>AGAMA</td>\r\n			<td>:</td>\r\n			<td>ISLAM</td>\r\n		</tr>\r\n		<tr>\r\n			<td>ALAMAT</td>\r\n			<td>:</td>\r\n			<td>Jl. KGS HASAN KEL. PASAR UJUNG KECAMATAN KEPAHIANG PROVINSI BENGKULU</td>\r\n		</tr>\r\n	</tbody>\r\n</table>\r\n\r\n<h4>PENDIDIKAN</h4>\r\n\r\n<ol>\r\n	<li>Sekolah Dasar Negeri 03 Bukit Kemuning Lampung 1981</li>\r\n	<li>SMPN 01 Bukit Kemuning Lampung Tahun 1984</li>\r\n	<li>SMAN 01 Bukit Kemuning Lampung Tahun 1987</li>\r\n	<li>\r\n	<div>D3 Pendidikan Sejarah Universitas Lampung Tahun 1990</div>\r\n	</li>\r\n	<li>\r\n	<div>S1 Pendidikan Sejarah Universitas Negeri Padang Tahun 2000</div>\r\n	</li>\r\n	<li>\r\n	<div>S2 Manajemen Pendidikan Universitas Bengkulu Tahun 2010</div>\r\n	</li>\r\n</ol>\r\n\r\n<h4>RIWAYAT KEPANGKATAN DAN JABATAN</h4>\r\n\r\n<ol>\r\n	<li>Penerimaan Penghargaan Satya Lencana Karya Satya 10 Tahun Dari Presiden Republik Indonesia Tahun 2012.</li>\r\n	<li>Kepala Sekolah di SMKN 01 Bermani Ilir, Peningkatan Jumlah Siswa Secara Signifikan dari 24 Siswa menjadi 153 Siswa.</li>\r\n	<li>Kepala Sekolah SMKN 02 Kepahiang : &nbsp;</li>\r\n</ol>\r\n\r\n<ul style=\"margin-left:40px\">\r\n	<li>Kepala Sekolah Berprestasi Tahun 2013</li>\r\n	<li>\r\n	<div>Sekolah &ldquo;Adiwiyata Nasional&rdquo; Tahun 2013</div>\r\n	</li>\r\n	<li>\r\n	<div>Juara II Nasional PIK.R tahap TEGAK Tahun 2013</div>\r\n	</li>\r\n	<li>\r\n	<div>Juara III Nasional PIK.R tahap TEGAR Tahun 2013</div>\r\n	</li>\r\n	<li>\r\n	<div>Kader Bina Keluarga Remaja (BKR) Tingkat Nasional Tahun 2014</div>\r\n	</li>\r\n	<li>\r\n	<div>Perwakilan Provinsi Bengkulu FLSN SENI TARI Tahun 2014 dan 2015</div>\r\n	</li>\r\n	<li>\r\n	<div>Sekolah Rujukan Tahun 2016</div>\r\n	</li>\r\n	<li>\r\n	<div>Ujian Nasional Berbasis Nasional berbasis Komputer (UNBK) Tahun 2016</div>\r\n	</li>\r\n	<li>\r\n	<div>Penambahan areal lahan Sekolah 1,5 Ha Tahun 2016</div>\r\n	</li>\r\n	<li>\r\n	<div>\r\n	<div>Penambahan Bangunan Sekolah dari 14 Unit menjadi 60 Unit (rata rata danaberasal dari dana Pusat ).</div>\r\n	</div>\r\n	</li>\r\n</ul>\r\n\r\n<ol start=\"4\">\r\n	<li>Pengawas Sekolah Dinas Pendidikan dan Kebudayaan Provinsi Bengkulu Tahun 2016.</li>\r\n	<li>\r\n	<div>Kepala Sekolah SMKN 05 Kepahiang Tahun 2019</div>\r\n	</li>\r\n</ol>\r\n', 'http://localhost/sisbw/assets/img/profile kepala sekolah/reza.jpg'),
-('f310af00-b1c8-40b8-8b80-919ca8861f1f', 'ded', 'dedd', 'guru', 'd', NULL),
-('fbb5ca5f-fe68-4dd0-8428-48d1bb2032c3', 'reza sariful fikri', 'wakil kepala sekolah', 'guru', 'wakil kepala sekolah', NULL);
+('1', 'Dian Pranata', 'Guru TIK', 'guru', '', NULL),
+('bc3f9300-6432-46ce-b04b-3374c97bf0fa', 'Sopika Alawiya', 'Bendahara', 'staf', NULL, NULL),
+('d1b74016-534f-4e35-a72a-2803881b8f6d', 'Reza Sariful Fikkri', 'Kepala Sekolah', 'kepala_sekolah', '<h4>IDENTITAS DIRI</h4>\r\n\r\n<table class=\"\\\">\r\n	<tbody>\r\n		<tr>\r\n			<td>NIP</td>\r\n			<td>:</td>\r\n			<td>19670707 199412 1 002</td>\r\n		</tr>\r\n		<tr>\r\n			<td>PANGKAT/GOLONGAN</td>\r\n			<td>:</td>\r\n			<td>PEMBINA Tk.I/IV b</td>\r\n		</tr>\r\n		<tr>\r\n			<td>TEMPAT TANGGAL LAHIR</td>\r\n			<td>:</td>\r\n			<td>BUKIT KEMUNING, 07 JULI 1967</td>\r\n		</tr>\r\n		<tr>\r\n			<td>JENIS KELAMIN</td>\r\n			<td>:</td>\r\n			<td>LAKI-LAKI</td>\r\n		</tr>\r\n		<tr>\r\n			<td>AGAMA</td>\r\n			<td>:</td>\r\n			<td>ISLAM</td>\r\n		</tr>\r\n		<tr>\r\n			<td>ALAMAT</td>\r\n			<td>:</td>\r\n			<td>Jl. KGS HASAN KEL. PASAR UJUNG KECAMATAN KEPAHIANG PROVINSI BENGKULU</td>\r\n		</tr>\r\n	</tbody>\r\n</table>\r\n\r\n<h4>PENDIDIKAN</h4>\r\n\r\n<ol>\r\n	<li>Sekolah Dasar Negeri 03 Bukit Kemuning Lampung 1981</li>\r\n	<li>SMPN 01 Bukit Kemuning Lampung Tahun 1984</li>\r\n	<li>SMAN 01 Bukit Kemuning Lampung Tahun 1987</li>\r\n	<li>\r\n	<div>D3 Pendidikan Sejarah Universitas Lampung Tahun 1990</div>\r\n	</li>\r\n	<li>\r\n	<div>S1 Pendidikan Sejarah Universitas Negeri Padang Tahun 2000</div>\r\n	</li>\r\n	<li>\r\n	<div>S2 Manajemen Pendidikan Universitas Bengkulu Tahun 2010</div>\r\n	</li>\r\n</ol>\r\n\r\n<h4>RIWAYAT KEPANGKATAN DAN JABATAN</h4>\r\n\r\n<ol>\r\n	<li>Penerimaan Penghargaan Satya Lencana Karya Satya 10 Tahun Dari Presiden Republik Indonesia Tahun 2012.</li>\r\n	<li>Kepala Sekolah di SMKN 01 Bermani Ilir, Peningkatan Jumlah Siswa Secara Signifikan dari 24 Siswa menjadi 153 Siswa.</li>\r\n	<li>Kepala Sekolah SMKN 02 Kepahiang : &nbsp;</li>\r\n</ol>\r\n\r\n<ul style=\"margin-left:40px\">\r\n	<li>Kepala Sekolah Berprestasi Tahun 2013</li>\r\n	<li>\r\n	<div>Sekolah &ldquo;Adiwiyata Nasional&rdquo; Tahun 2013</div>\r\n	</li>\r\n	<li>\r\n	<div>Juara II Nasional PIK.R tahap TEGAK Tahun 2013</div>\r\n	</li>\r\n	<li>\r\n	<div>Juara III Nasional PIK.R tahap TEGAR Tahun 2013</div>\r\n	</li>\r\n	<li>\r\n	<div>Kader Bina Keluarga Remaja (BKR) Tingkat Nasional Tahun 2014</div>\r\n	</li>\r\n	<li>\r\n	<div>Perwakilan Provinsi Bengkulu FLSN SENI TARI Tahun 2014 dan 2015</div>\r\n	</li>\r\n	<li>\r\n	<div>Sekolah Rujukan Tahun 2016</div>\r\n	</li>\r\n	<li>\r\n	<div>Ujian Nasional Berbasis Nasional berbasis Komputer (UNBK) Tahun 2016</div>\r\n	</li>\r\n	<li>\r\n	<div>Penambahan areal lahan Sekolah 1,5 Ha Tahun 2016</div>\r\n	</li>\r\n	<li>\r\n	<div>\r\n	<div>Penambahan Bangunan Sekolah dari 14 Unit menjadi 60 Unit (rata rata danaberasal dari dana Pusat ).</div>\r\n	</div>\r\n	</li>\r\n</ul>\r\n\r\n<ol start=\"4\">\r\n	<li>Pengawas Sekolah Dinas Pendidikan dan Kebudayaan Provinsi Bengkulu Tahun 2016.</li>\r\n	<li>\r\n	<div>Kepala Sekolah SMKN 05 Kepahiang Tahun 2019</div>\r\n	</li>\r\n</ol>\r\n', 'http://localhost/School-website/assets/img/profile kepala sekolah/reza.jpg'),
+('f310af00-b1c8-40b8-8b80-919ca8861f1f', 'Adelina Damayanti', 'Guru Keprawatan', 'guru', '', NULL),
+('fbb5ca5f-fe68-4dd0-8428-48d1bb2032c3', 'Reza Sariful Fikri', 'Kepala sekolah', 'guru', 'Kepala sekolah', NULL);
 
 -- --------------------------------------------------------
 
@@ -148,7 +148,7 @@ CREATE TABLE `jurusan` (
   `jurusan_id` varchar(36) NOT NULL,
   `jurusan` varchar(50) NOT NULL,
   `url_logo` varchar(100) DEFAULT NULL,
-  `keterangan` text
+  `keterangan` text DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -173,10 +173,6 @@ CREATE TABLE `komentar` (
   `post` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
---
--- Dumping data for table `komentar`
---
-
 -- --------------------------------------------------------
 
 --
@@ -190,10 +186,6 @@ CREATE TABLE `komentarbalas` (
   `komenBalas` text NOT NULL,
   `post` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `komentarbalas`
---
 
 -- --------------------------------------------------------
 
@@ -252,8 +244,8 @@ CREATE TABLE `opening_word` (
 --
 
 INSERT INTO `opening_word` (`opening_word_id`, `nama_sekolah`, `word`, `url_background`) VALUES
-('668b92df-b4d5-468e-ba87-a438aef68830', 'SMK NEGERI R KEPAHIANG', '<p>SMK Negeri R Kepahiang adalah salah satu Sekolah Menengah Kejuruan di Provinsi bengkulu, Kabupaten Kepahiang. Menciptakan Lulusan yang Berkompeten dan Siap Kerja</p>\r\n\r\n<p>SMK BISA-HEBAT. Siap Kerja - Santun - Mandiri - Kreatif</p>\r\n', 'http://localhost/sisbw/assets/img/opening word/my.jpg'),
-('c010ad2f-7a6c-440a-a9de-a6414ede44e6', 'SMK NEGERI R KEPAHIANG', '<p>SMK Negeri R Kepahiang adalah salah satu Sekolah Menengah Kejuruan di Provinsi bengkulu, Kabupaten Kepahiang. Menciptakan Lulusan yang Berkompeten dan Siap Kerja</p>\r\n\r\n<p>SMK BISA-HEBAT. Siap Kerja - Santun - Mandiri - Kreatif</p>\r\n', 'http://localhost/sisbw/assets/img/opening word/my.jpg');
+('668b92df-b4d5-468e-ba87-a438aef68830', 'SMK NEGERI R KEPAHIANG', '<p>SMK Negeri R Kepahiang adalah salah satu Sekolah Menengah Kejuruan di Provinsi bengkulu, Kabupaten Kepahiang. Menciptakan Lulusan yang Berkompeten dan Siap Kerja</p>\r\n\r\n<p>SMK BISA-HEBAT. Siap Kerja - Santun - Mandiri - Kreatif</p>\r\n', 'http://localhost/School-website/assets/img/opening word/my.JPG'),
+('c010ad2f-7a6c-440a-a9de-a6414ede44e6', 'SMK NEGERI R KEPAHIANG', '<p>SMK Negeri R Kepahiang adalah salah satu Sekolah Menengah Kejuruan di Provinsi bengkulu, Kabupaten Kepahiang. Menciptakan Lulusan yang Berkompeten dan Siap Kerja</p>\r\n\r\n<p>SMK BISA-HEBAT. Siap Kerja - Santun - Mandiri - Kreatif</p>\r\n', 'http://localhost/School-website/assets/img/opening word/my.JPG');
 
 -- --------------------------------------------------------
 
@@ -309,7 +301,7 @@ CREATE TABLE `struktur` (
 --
 
 INSERT INTO `struktur` (`struktur_id`, `url_struktur`) VALUES
-('0e45aa60-8c8d-4a40-9316-3e17e633ab07', 'http://localhost/sisbw/assets/img/structur.png');
+('0e45aa60-8c8d-4a40-9316-3e17e633ab07', 'http://localhost/School-website/assets/img/structur.png');
 
 -- --------------------------------------------------------
 
@@ -332,7 +324,7 @@ CREATE TABLE `user` (
 
 INSERT INTO `user` (`user_id`, `nama`, `username`, `password`, `level`, `lastLogin`) VALUES
 ('07155353-13cc-488b-82e4-d01536627098', 'prisko', 'prisko', '$2y$10$rnHLjt4l3As8QAu/VTRhYuszVCQudI9yFy/I.54sERS1DipOMSRzS', 'operator', '1558335680'),
-('82829b15-de76-4cfd-9d32-7939584c70a5', 'reza', 'reza', '$2y$10$VLfbO01GIagiidlHYqLU5eaSvZ46XkZ8V/.KOs/pe0H9ULHS4p/Nu', 'superAdmin', '1558450541'),
+('82829b15-de76-4cfd-9d32-7939584c70a5', 'reza', 'reza', '$2y$10$VLfbO01GIagiidlHYqLU5eaSvZ46XkZ8V/.KOs/pe0H9ULHS4p/Nu', 'superAdmin', '1595564498'),
 ('d46d5ae1-7b5a-4594-a9f2-cbf9376be135', 'dian', 'dian', '$2y$10$AVOsSP6fJCnI0O9FYz0bmOQ1sZMyysiimg/dBXlz8psIxmAztK46O', 'admin', '1558408319');
 
 -- --------------------------------------------------------
@@ -354,7 +346,7 @@ CREATE TABLE `video` (
 INSERT INTO `video` (`video_id`, `url_video`, `post`) VALUES
 ('0b608b7b-c5c7-4ca7-9c0e-4b4e7c00989d', 'https://www.youtube.com/embed/fG60N2D26hA?rel=0', '1558431954'),
 ('7ca0777c-804b-46f6-8661-a7a48ce359da', 'https://www.youtube.com/embed/fG60N2D26hA?rel=0', '1553592899'),
-('a1060795-0cd8-42d2-83ae-de814a9d68ec', 'https://www.youtube.com/embed/fG60N2D26hA?rel=0', '1558431957'),
+('a1060795-0cd8-42d2-83ae-de814a9d68ec', 'https://www.youtube.com/embed/fG60N2D26hA?rel=0', '1595573185'),
 ('a585b2aa-7908-4cfa-82f2-8322ae292e90', 'https://www.youtube.com/embed/fG60N2D26hA?rel=0', '1558431950'),
 ('a88645a0-71ec-42a7-a012-78c9e26a18cc', 'https://www.youtube.com/embed/fG60N2D26hA?rel=0', '1558431940'),
 ('bbaf767e-5ef0-44c3-b754-dc746ea41348', 'https://www.youtube.com/embed/fG60N2D26hA?rel=0', '1558431944'),

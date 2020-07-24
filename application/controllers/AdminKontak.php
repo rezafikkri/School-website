@@ -3,7 +3,7 @@
 /**
 * 
 */
-class adminKontak extends CI_Controller {
+class AdminKontak extends CI_Controller {
 
 	public function __construct() {
 		parent::__construct();

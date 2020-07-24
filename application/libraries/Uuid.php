@@ -3,7 +3,7 @@
 /**
 * 
 */
-class uuid {
+class Uuid {
 	
 	static public function generate_uuid() {
 

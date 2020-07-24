@@ -76,7 +76,7 @@
 			const offset = $(".jmlBerita").length;
 			$.ajax({
 				type:"GET",
-				url:"<?= base_url('home/ajaxGetBerita'); ?>",
+				url:"<?= base_url('Home/ajaxGetBerita'); ?>",
 				data:{offset:offset},
 				beforeSend:function() {
 					$(".loader").fadeIn();

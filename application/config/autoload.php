@@ -89,7 +89,7 @@ $autoload['drivers'] = array();
 |
 |	$autoload['helper'] = array('url', 'file');
 */
-$autoload['helper'] = array('url','form','cek_login','generate_post','linkDownload','getLogoSekolahinAllPage','myForm_Errors','form_validation_message_id','cek_nama_delete_komentar_sama_dengan_nama_login_for_operator','tampil_kontak_for_footer','generate_level_for_edit_user','generate_wakil_and_guru','uploadFileErrors');
+$autoload['helper'] = array('url','form','cek_login','generate_post','link_download','get_logo_sekolah_in_all_page','my_form_errors','form_validation_message_id','cek_nama_delete_komentar_sama_dengan_nama_login_for_operator','tampil_kontak_for_footer','generate_level_for_edit_user','generate_wakil_and_guru','upload_file_errors');
 
 /*
 | -------------------------------------------------------------------

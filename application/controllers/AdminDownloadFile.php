@@ -3,7 +3,7 @@
 /**
 * 
 */
-class adminDownloadFile extends CI_Controller {
+class AdminDownloadFile extends CI_Controller {
 	public function __construct() {
 	    parent::__construct();
 	    if(cek_login() === 'noLogin') {
